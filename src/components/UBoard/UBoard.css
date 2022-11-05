@@ -1,0 +1,96 @@
+#uboard {
+    --board-bg: #2c2c2c;
+    --board-head-accent: hsla(0, 0%, 0%, 0.5);
+    --board-head-bg: hsla(210, 79%, 50%);
+}
+
+#uboard article {
+    /* display: inline-flex;
+    overflow-x: auto;
+    gap: 1rem;
+    padding: 0 24px 0 24px;
+    height: 80%;
+    width: 100%; */
+    display: grid;
+    height: 100%;
+    gap: 10px;
+    grid-auto-columns: minmax(max-content, auto);
+    grid-auto-flow: column;
+    overflow-x: scroll;
+    position: relative;
+}
+
+/* .uboard-board {
+    background-color: #edf0f4;
+} */
+
+.uboard-column {
+    width: 325px;
+    list-style-type: none;
+    border-radius: 5px;
+}
+
+.uboard-heading {
+    background-color: var(--board-head-bg);
+    padding: 1rem 1.5rem;
+    border-top: 5px solid var(--board-head-accent);
+    border-bottom: 1px solid #c7e8ce;
+    border-inline: 1px solid #c7e8ce;
+    margin-bottom: 1rem;
+    font-size: 18px;
+    color: white;
+}
+
+.uboard-heading p {
+    padding-bottom: 2rem;
+    font-weight: bold;
+}
+
+.uboard-item {
+    background-color: white;
+    box-shadow: 0 1px 2px 0 rgb(0 0 0 / 10%);
+    padding: 1.2em;
+    border-radius: 5px;
+    min-height: 56px;
+}
+
+.uboard-item *, .uboard-heading * {
+    margin: 0;
+}
+
+.uboard-body {
+    display: flex;
+    flex-direction: column;
+    gap: 1.3rem;
+    min-height: 60vh;
+}
+
+
+#uboard2 {
+    padding: 24px;
+}
+
+#uboard2 table {
+    border: 1px solid rgb(185, 185, 185);
+    position: relative;
+}
+
+.board-view {
+    padding: 24px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.board-view span {
+    margin-left: auto;
+}
+
+.deal_stage_title span {
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+
+.deal_stage_title {
+    background-color: whitesmoke;
+}

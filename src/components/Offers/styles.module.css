@@ -1,0 +1,49 @@
+.offers {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin: 24px;
+    padding: 1rem;
+  }
+  
+  .create {
+    flex-basis: 30%;
+  }
+  
+  .list {
+    flex: 1;
+  }
+  
+  .offerCard {
+    display: flex;
+    background-color: #fff;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px,
+      rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
+    border-radius: 5px;
+    padding: 1.5rem;
+  }
+  
+  .offerCardInner {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 100%;
+  }
+  
+  .offerTitle {
+    font-size: 1.2rem;
+    border-bottom: 1px solid grey;
+    width: 100%;
+  }
+  
+  .offerForm {
+    display: flex;
+  }
+  
+  .offerList {
+    padding-top: 4rem;
+  }
+  
+  .action {
+    display: flex!important;
+    gap: 1rem;
+  }

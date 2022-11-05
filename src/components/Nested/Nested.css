@@ -1,0 +1,27 @@
+.food {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.food p {
+    padding: 1.5rem;
+    border-radius: 0.5em;
+}
+
+.food p:first-of-type {
+    margin-top: 0.8rem;
+}
+
+.food p:not(.App p.comment) {
+    border: 1px solid green;
+}
+
+.food p:not(.App p:last-of-type) {
+    margin-bottom: 0.8rem
+}
+
+.table {
+    padding: 24px;
+}

@@ -1,0 +1,11 @@
+#invite {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 24px;
+}
+
+.add-invite {
+    align-self: flex-start;
+    width: 20rem;
+}

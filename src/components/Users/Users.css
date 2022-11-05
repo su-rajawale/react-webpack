@@ -1,0 +1,159 @@
+/* Common */
+
+/* Users */
+
+.users {
+  padding: 24px;
+}
+
+.users-heading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-block: 0.8rem;
+  padding-inline: 1rem;
+  background-color: #2c2c2c;
+  margin-bottom: 1rem;
+  border-radius: 8px;
+}
+
+.users-heading h1 {
+  margin: 0;
+  font-weight: normal;
+}
+
+.users-heading * {
+  color: white;
+}
+
+.rctooltip {
+  position: relative;
+}
+
+.rctooltip:hover::after {
+  content: attr(data-tooltip);
+  position: absolute;
+  top: 110%;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 0.3rem;
+  width: max-content;
+  border-radius: 5px;
+  text-align: center;
+  font-size: 13px;
+  background-color: black;
+  color: white;
+}
+
+.action > * {
+  margin-right: 0.5rem;
+}
+
+.fetch-error {
+  position: relative;
+  height: 20rem;
+}
+
+.fetch-error::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.fetch-error::before {
+  content: "Failed to retrieve users data, please check your connnection";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: #fff;
+  font-size: 2rem;
+  z-index: 1;
+}
+
+/* Users end */
+
+/* Add/Edit Users */
+
+dialog#add-user-modal,
+dialog#edit-user-modal {
+  padding: 0;
+  border: none;
+  border-radius: 8px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+#add_users article,
+#edit_users article {
+  /* max-width: 30%;
+    margin-inline: auto; */
+  width: 30vw;
+}
+
+.add-user-title,
+.edit-user-title {
+  font-size: 2.2rem;
+  padding: 1rem 1.5rem;
+  text-align: center;
+  border-bottom: 1px solid rgb(189, 189, 189);
+  margin: 0;
+}
+
+.react-form1,
+.react-form2 {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 30%;
+  padding: 2rem;
+  /* background-color: whitesmoke; */
+  border-radius: 8px;
+  /* box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px; */
+}
+
+.user-error {
+  color: red;
+  font-size: 1rem;
+}
+
+/* Add/Edit user end */
+
+/* Single User */
+
+.user-info {
+  padding: 3rem 5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+
+.user-name {
+  font-size: 3em;
+  padding-bottom: 2rem;
+}
+
+.user-info ul {
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  width: max-content;
+}
+
+.user-info li {
+  display: grid;
+  grid-template-columns: 8rem 1fr;
+}
+
+.user-info ul li span:first-of-type {
+  font-weight: bold;
+}
+
+.user-info img {
+  max-width: 200px;
+}
+
+/* Single User end */
